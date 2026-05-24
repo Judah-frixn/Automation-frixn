@@ -16,10 +16,9 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://automatelabs.com">
   <meta property="og:image" content="assets/og-image.png">
-  <script type="module" crossorigin src="/Automation-frixn/assets/index-BHKyoxmP.js"></script>
-  <link rel="stylesheet" crossorigin href="/Automation-frixn/assets/index-CXiMYXYM.css">
 </head>
 <body>
   <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
