@@ -83,7 +83,7 @@ export default function Hero() {
         >
           <div className="hero-visual-wrapper">
             <img 
-              src="/assets/hero_desk.png" 
+              src="assets/hero_desk.png" 
               alt="AutomateLabs Workspace Mockup" 
               className="hero-mockup-image"
             />

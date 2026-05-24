@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    image: '/assets/testimonial_1.png',
+    image: 'assets/testimonial_1.png',
     quote: "“AutomateLabs transformed our lead handling. We respond in seconds now.”",
     name: "Rohit Sharma",
     role: "CEO, Nexora",
@@ -11,7 +11,7 @@ const testimonials = [
     glowColor: "rgba(59, 130, 246, 0.4)" // Blue
   },
   {
-    image: '/assets/testimonial_2.png',
+    image: 'assets/testimonial_2.png',
     quote: "“Their automation saved us 20+ hours every week. Absolute game changer.”",
     name: "Anita Verma",
     role: "Operations Head, Ojas",
@@ -19,7 +19,7 @@ const testimonials = [
     glowColor: "rgba(139, 92, 246, 0.4)" // Violet
   },
   {
-    image: '/assets/testimonial_3.png',
+    image: 'assets/testimonial_3.png',
     quote: "“Everything runs in the background now. Our team can focus on what matters.”",
     name: "Karan Mehta",
     role: "Founder, Momentum",
