@@ -2032,10 +2032,14 @@ section::after {
     left: 0;
     width: 100%;
     height: calc(100vh - 70px);
-    background: var(--bg-dark);
+    background: rgba(3, 5, 8, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 3rem 2rem;
-    gap: 2rem;
+    gap: 1.75rem;
     z-index: 99;
     border-top: 1px solid var(--border-color);
     overflow-y: auto;
@@ -2043,6 +2047,21 @@ section::after {
 
   nav.open {
     display: flex;
+  }
+
+  nav a {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition-fast);
+    letter-spacing: -0.01em;
+  }
+
+  nav a:hover {
+    color: var(--text-primary);
+    transform: scale(1.05);
   }
 
   .nav-cta .btn-secondary {
@@ -2074,7 +2093,16 @@ section::after {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 
-  /* General Grid Layouts */
+  /* General Grid Layouts & Hero Scroll fixes */
+  .hero {
+    min-height: auto;
+    height: auto;
+    overflow: visible;
+    display: block;
+    padding-top: calc(var(--header-height) + 3rem);
+    padding-bottom: 5rem;
+  }
+
   .problem-solution-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -2150,6 +2178,7 @@ section::after {
 @media (max-width: 768px) {
   .hero {
     padding-top: calc(var(--header-height) + 2rem);
+    padding-bottom: 4rem;
   }
 
   .hero-cta-group {
@@ -2169,12 +2198,31 @@ section::after {
     margin-top: 2rem;
   }
 
+  /* Hide absolute panels on phone screen to reduce visual noise */
   .overlaid-panel {
-    position: static;
-    margin: 1.2rem auto 0 auto;
-    width: 100%;
-    max-width: 250px;
-    box-shadow: none;
+    display: none !important;
+  }
+
+  /* Swipable high-tech workflow canvas */
+  .canvas-area {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 2.5rem 1.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .workflow-nodes-container {
+    width: 750px;
+    flex-shrink: 0;
+  }
+
+  .connector-svg {
+    width: 750px;
+    flex-shrink: 0;
+  }
+
+  .calculator-right {
+    padding: 2.25rem 1.25rem;
   }
 
   .build-grid {
